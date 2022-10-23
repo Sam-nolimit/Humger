@@ -13,17 +13,23 @@ const Nav = styled.nav`
 
     .logo{
         padding: 15px 0;
+         
     }
+      @media (max-width: 400px) {
+        align-items: flex-start;
+        justify-content: flex-start;
+       
+      }
+      
   `
 
 function Navbar() {
   return (
     <Nav>
         <div className ='logo'>
-              Nav bar
+              ATSLabs
           </div>
-          <Burger/>
-          
+        <Burger/>
     </Nav>
   )
 }
